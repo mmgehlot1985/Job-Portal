@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="../vendor/morrisjs/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+       <!-- Custom Theme JavaScript -->
+
+   
+    
+
+</head>
+
+<body>
+
+
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="EmployerProfile.html" id="mylink" >Hirequick</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+               
+                <!-- /.dropdown -->
+                
+                     
+                     
+                
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                            </div>
+                            <!-- /input-group -->
+                        </li>
+                        <li>
+                            <a href="EmployerProfile.html" id="mlink" ><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                        </li>
+                        
+                        <li>
+                            <a href="JobPost.html" id="mmlink"><i class="fa fa-table fa-fw"></i> Post a Job</a>
+                        </li>
+                        <li>
+                            <a href="JobApplied.html" id="mmmlink" ><i class="fa fa-edit fa-fw"></i> History</a>
+                        </li>
+                       
+                       
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Profile</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-8">
+                   
+                    <!-- /.panel -->
+                    <div class="panel panel-default">
+                        <div class="container"  >
+        
+      <div class="profile">
+      <form method="post" style="padding-top: 2%;">
+        <label>Personal Information</label>
+        <p><input type="text" id ="fname" name="firstName" value=""  placeholder="First Name" readonly="readonly"></p>
+	<p><input type="text" id="lname" name="lastName" value=""  placeholder="Last Name" readonly="readonly"></p>
+        
+        <p><input type="text" id="telNo" name="phoneNo" value=""  placeholder="Telephone Number" readonly="readonly"></p>
+        <p><input type="text" id="email" name="email" value=""  placeholder="Email" required></p>
+        <label>Company Details</label>
+         <p><textarea type="text" id= "companyInfo" name="companyInfo" value=""  placeholder="        detail" style="height: 200px; width: 600px;" cols="40" rows="5" required></textarea></p>
+	<label>Note</label>
+         <p><textarea type="text" id="note" name="note" value=""  placeholder="        note" style="height: 200px; width: 600px;" cols="40" rows="5" required></textarea></p>
+        	
+        <p class="submit" style="color: #040505;"><input type="submit"  value="Save Changes" style="width: 20%;" readonly="readonly"></p>
+      </form>
+    </div>
+    </div>
+    </div>
+       
+    
+    
+    <section  >
+        <div class="container">
+                     
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-8 -->
+                <div class="col-lg-4">
+                   
+                    <!-- /.panel -->
+                    <div class="panel panel-default">
+                        
+                    </div>
+                    <!-- /.panel -->
+                    <div class="chat-panel panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-comments fa-fw"></i> Chat
+                            <div class="btn-group pull-right">
+                                <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-chevron-down"></i>
+                                </button>
+                                <ul class="dropdown-menu slidedown">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-refresh fa-fw"></i> Refresh
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-check-circle fa-fw"></i> Available
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-times fa-fw"></i> Busy
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-clock-o fa-fw"></i> Away
+                                        </a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-sign-out fa-fw"></i> Sign Out
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <ul class="chat">
+                                <li class="left clearfix">
+                                    <span class="chat-img pull-left">
+                                        <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar" class="img-circle" />
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <strong class="primary-font">Jack Sparrow</strong>
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 12 mins ago
+                                            </small>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="right clearfix">
+                                    <span class="chat-img pull-right">
+                                        <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle" />
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <small class=" text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 13 mins ago</small>
+                                            <strong class="pull-right primary-font">Bhaumik Patel</strong>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="left clearfix">
+                                    <span class="chat-img pull-left">
+                                        <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar" class="img-circle" />
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <strong class="primary-font">Jack Sparrow</strong>
+                                            <small class="pull-right text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 14 mins ago</small>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="right clearfix">
+                                    <span class="chat-img pull-right">
+                                        <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle" />
+                                    </span>
+                                    <div class="chat-body clearfix">
+                                        <div class="header">
+                                            <small class=" text-muted">
+                                                <i class="fa fa-clock-o fa-fw"></i> 15 mins ago</small>
+                                            <strong class="pull-right primary-font">Bhaumik Patel</strong>
+                                        </div>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.panel-body -->
+                        <div class="panel-footer">
+                            <div class="input-group">
+                                <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here..." />
+                                <span class="input-group-btn">
+                                    <button class="btn btn-warning btn-sm" id="btn-chat">
+                                        Send
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                        <!-- /.panel-footer -->
+                    </div>
+                    <!-- /.panel .chat-panel -->
+                </div>
+                <!-- /.col-lg-4 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+      <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+ 
+  <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+
+
+ 
+<script type="text/javascript">
+    // Handler for .ready() called.
+  $( document ).ready(function() {
+
+        var query = window.location.search.substring(1);
+        var u=query.split("=");
+        var username=u[1];
+        $("#mylink").attr("href", "EmployerProfile.html?Username=" + username);
+        $("#mlink").attr("href", "EmployerProfile.html?Username=" + username);
+        $("#mmlink").attr("href", "JobPost.html?Username=" + username);
+        $("#mmmlink").attr("href", "JobApplied.html?Username=" + username);
+        var dataa= '{"userName" : "' + username + '" , "role" : 1 }';
+        var isnew;   
+        
+         $.ajax({
+            type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
+            url         : 'http://35.163.132.184:8181/api/user/profile', // the url where we want to POST
+            
+            contentType : "application/json" ,
+            dataType    : 'json', // what type of data do we expect back from the server
+            data        : dataa// our data object
+                        
+        })
+            // using the done promise callback
+            .done(function(data) {
+                console.log(data); 
+                // log data to the console so we can see
+                if(data["errorCode"] == 0)
+                {//alert("You are regitered now");
+                    $('#fname').val(data["dataResponse"]["0"]["firstName"]);
+                    $("#lname").val(data["dataResponse"]["0"]["lastName"]);
+                    $("#telNo").val(data["dataResponse"]["0"]["phoneNo"]);
+                    if(data["dataResponse"]["0"]["isNewUser"] == '1')
+                    {
+                            
+                            isnew=1;
+
+                            
+                    }
+                    else{
+                        isnew=0;
+                        $('#email').val(data["dataResponse"]["0"]["email"]);
+                    $("#note").val(data["dataResponse"]["0"]["note"]);
+                    $("#companyInfo").val(data["dataResponse"]["0"]["companyInfo"]);
+                       
+                    }
+                }
+                else
+                    {
+
+                        alert("The user already exist");
+                         
+
+                    }
+                
+                //alert("good job!");
+                //window.location.replace("home.html");
+
+                // here we will handle errors and validation messages
+            })
+            .fail(function (jqXHR, textStatus) {
+                alert("fail");
+                console.log("fail");
+                console.log(dataa);
+      
+            });
+        
+
+
+
+
+         (function ($) {
+            $.fn.serializeFormJSON = function () {
+
+        var o = {};
+        var a = this.serializeArray();
+        $.each(a, function () {
+            if (o[this.name]) {
+                if (!o[this.name].push) {
+                    o[this.name] = [o[this.name]];
+                }
+                o[this.name].push(this.value || '');
+            } else if(this.name == "note" || this.name == "companyInfo"   || this.name == "email") {
+                o[this.name] = this.value || '';
+            }
+        });
+        //o["userName"] = [o["userName"]];
+        //o["userName"].push( username || '');
+        var rolee=1;
+        o["userName"] = username || '';
+        o["role"] = rolee;
+        return o;
+    };
+})(jQuery);
+
+$('form').submit(function (e) {
+    e.preventDefault();
+    var dataa = $(this).serializeFormJSON();
+    //dataa.push({ "userName" : username });
+    
+   console.log("create data" + dataa["note"]);
+
+        var myurl;
+        if(isnew == 1){
+            myurl='http://35.163.132.184:8181/api/user/create-profile';
+        }
+        else if(isnew == 0){
+            myurl='http://35.163.132.184:8181/api/user/update-profile';
+        }
+
+        // process the form
+        $.ajax({
+            type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
+            url         : myurl, // the url where we want to POST
+            
+            contentType : "application/json" ,
+            dataType    : 'json', // what type of data do we expect back from the server
+            data        : JSON.stringify(dataa)// our data object
+                        
+        })
+            // using the done promise callback
+            .done(function(data) {
+                console.log(data);
+                // log data to the console so we can see
+                if(data["errorCode"] == 0){alert("Submitted"); isnew=0; }
+                else
+                    {alert("problem");}
+                 
+                //alert("good job!");
+                //window.location.replace("home.html");
+
+                // here we will handle errors and validation messages
+            })
+            .fail(function (jqXHR, textStatus) {
+        alert("fail");
+            console.log("fail");
+            console.log(dataa);
+      
+            });
+
+        // stop the form from submitting the normal way and refreshing the page
+        event.preventDefault();
+   
+
+        });
+    });
+    </script>
+
+
+  
+
+</body>
+
+</html>

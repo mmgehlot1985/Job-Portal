@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>Free Property Template </title>
+    <!--REQUIRED STYLE SHEETS-->
+    <!-- BOOTSTRAP CORE STYLE CSS -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FONTAWESOME STYLE CSS -->
+    <link href="../assets/css/font-awesome.min.css" rel="stylesheet" />
+       <!-- CUSTOM STYLE CSS -->
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <!-- GOOGLE FONT -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    <script src="../jquery-3.1.1.min.js"></script>
+
+
+
+<style>
+		input[type=text], select {
+    width: 40%;
+    padding: 12px 20px;
+
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+		input[type=password], select {
+    width:40%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.label{
+	width: 100%;
+    padding: 12px;
+	
+}
+
+.btn{
+	width: 100%;
+    padding: 12px 20px;
+	font-size: large;
+	font-weight: bold;
+	border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+	</style>
+</head>
+<body>
+     <!-- NAV SECTION -->
+         <div class="navbar navbar-inverse navbar-fixed-top">
+       
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Hirequick</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="home.html">HOME</a></li>
+                     <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+           
+        </div>
+    </div>
+     <!--END NAV SECTION -->
+    
+    <!--HOME SECTION-->
+     
+    <div id="home-sec">   
+    <div class="container"  >
+        
+     <div class="login">
+      <h1 style="color: #040505;">Create an Account</h1>
+      <form >
+        <p style="color: black;"><input type="text" name="firstName" value="" required="required" placeholder="First Name" color="black" required></p>
+		<p style="color: black;"><input type="text" name="lastName" value="" required="required"  placeholder="Last Name" required></p>
+		<p style="color: black;"><input type="text" name="userName" value="" required="required"  placeholder="Username" required></p>
+        <p style="color: black;"><input type="password" name="password" value="" required="required"  placeholder="Password" required></p>
+		<p style="color: black;"><input type="text" name="phoneNo" value="" required="required"  placeholder="Phone Number" required></p>
+		<p style="color: black;"><input type="radio" name="role" value="1" required="required" > Recruiter</p>
+		<p style="color: black;"><input type="radio" name="role" value="0"> Job Seeker</p>
+        <p class="submit" style="color: #040505;"><input type="submit" style="width: 20%;"></p>
+      </form>
+    </div>
+
+    <div class="login-help">
+      <p style="color: #040505;">Already have an account? <a href="login.html">Click here to login.</a>.</p>
+    </div>
+    </div>
+    </div>
+       
+    
+    
+    <section  >
+        <div class="container">
+            
+    
+          
+
+        </div>
+    </section>
+
+     <!--END HOME SECTION-->
+
+    
+    <!--FOOTER SECTION -->
+    <div id="footer">
+        2016 www.hirequick.com | All Right Reserved  
+         
+    </div>
+
+    <!-- END FOOTER SECTION -->
+    
+    <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY  -->
+    <script src="../assets/plugins/jquery-1.10.2.js"></script>
+    <!-- BOOTSTRAP CORE SCRIPT   -->
+    <script src="../assets/plugins/bootstrap.min.js"></script>  
+    <!-- CUSTOM SCRIPTS -->
+    <script src="../assets/js/custom.js"></script>
+    
+
+    <script>
+    (function ($) {
+    $.fn.serializeFormJSON = function () {
+
+        var o = {};
+        var a = this.serializeArray();
+        $.each(a, function () {
+            if (o[this.name]) {
+                if (!o[this.name].push) {
+                    o[this.name] = [o[this.name]];
+                }
+                o[this.name].push(this.value || '');
+            } else {
+                o[this.name] = this.value || '';
+            }
+        });
+        return o;
+    };
+})(jQuery);
+
+$('form').submit(function (e) {
+    e.preventDefault();
+    var dataa = $(this).serializeFormJSON();
+    console.log(dataa);
+
+    /* Object
+        email: "value"
+        name: "value"
+        password: "value"
+     */
+
+
+
+
+
+        // process the form
+        $.ajax({
+            type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
+            url         : 'http://35.163.132.184:8181/api/register', // the url where we want to POST
+            
+            contentType : "application/json" ,
+            dataType    : 'json', // what type of data do we expect back from the server
+            data        : JSON.stringify(dataa)// our data object
+                        
+        })
+            // using the done promise callback
+            .done(function(data) {
+
+                // log data to the console so we can see
+                if(data["errorCode"] == 0){alert("You are regitered now"); window.location.replace("home.html");}
+                else
+                    {alert("The user already exist");}
+                console.log(data); 
+                //alert("good job!");
+                //window.location.replace("home.html");
+
+                // here we will handle errors and validation messages
+            })
+            .fail(function (jqXHR, textStatus) {
+        alert("fail");
+            console.log("fail");
+            console.log(dataa);
+      
+            });
+
+        // stop the form from submitting the normal way and refreshing the page
+        event.preventDefault();
+   
+
+});
+   
+</script>
+    </body>
+</html>
